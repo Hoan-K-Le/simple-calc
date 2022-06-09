@@ -15,7 +15,7 @@ export default class Calculator extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
        // EVAL IS BAD.. NO NO... DO NOT DO THIS.. BROKEN DESIGN.. PLEASE IGNORE WHOEVER READS THIS.
-       // BILLY TAUGHT ME THIS..IF YOU KNOW WHO BILLY IS.. I JUST THOUGHT IT WAS COOL.
+       
        let evalValue = eval(`${this.state.num1} ${this.state.operator} ${this.state.num2}`) 
         this.setState (() => {
             return {total: evalValue}
